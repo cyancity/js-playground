@@ -12,7 +12,6 @@ export default {
   },
   props: ['type'],
   mounted () {
-    var that = this;
     let editor = this.$refs.editor
     let defaultValue = {
       html: () => {
@@ -31,7 +30,7 @@ export default {
       mode: 'text/html',
       lineNumbers: true,
       lineWrapping: true,
-      extraKeys: {'Ctrl-Q': function (cm) {
+      extraKeys: {'Ctrl-Q': cm => {
         cm.foldCode(cm.getCursor())
       }},
       flodGutter: true,
@@ -60,7 +59,7 @@ export default {
 
     window['editor_' + this.type].setOption('theme', 'dracula')
 
-    window['editor_' + this.type].on('change', function () {
+    window['editor_' + this.type].on('change', () => {
       that.render()
     })
   },
