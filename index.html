@@ -2,37 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Playground</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>js-playground</title>
+    <link rel="stylesheet" href="static/css/codemirror.css">
+    <link rel="stylesheet" href="static/css/show-hint.css">
+    <link rel="stylesheet" href="static/css/foldgutter.css">
+    <link rel="stylesheet" href="static/css/dracula.css">
+    <!-- Core -->
+    <script src="static/js/codemirror.js"></script>
+    <script src="static/js/show-hint.js"></script>
+    <script src="static/js/xml-hint.js"></script>
+    <script src="static/js/html-hint.js"></script>
+
+    <!-- Folding -->
+    <script src="static/js/foldcode.js"></script>
+    <script src="static/js/foldgutter.js"></script>
+    <script src="static/js/brace-fold.js"></script>
+    <script src="static/js/xml-fold.js"></script>
+    <script src="static/js/comment-fold.js"></script>
+    <!-- emmet -->
+    <script src="static/js/emmet.js"></script>
+    <!-- parse -->
+    <script src="static/js/xml.js"></script>
+    <script src="static/js/javascript.js"></script>
+    <script src="static/js/css.js"></script>
+    <script src="static/js/htmlmixed.js"></script>
+    <!-- sublime -->
+    <script src="static/js/searchcursor.js"></script>
+    <script src="static/js/search.js"></script>
+    <script src="static/js/sublime.js"></script>
+
+    <style type="text/css">
+      .CodeMirror {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+    </style>
   </head>
   <body>
-    <div id="wrap">
-
-      <section id="code_editors">
-
-        <div id="html" class="code-box">
-          <h3>Html</h3>
-          <textarea name="html"></textarea>
-        </div>
-
-        <div id="css" class="code-box">
-          <h3>Css</h3>
-          <textarea name="css"></textarea>
-        </div>
-
-        <div id="js" class="code-box">
-          <h3>Js</h3>
-          <textarea name="js"></textarea>
-        </div>
-
-      </section>
-
-      <section id="output">
-        <iframe></iframe>
-      </section>
-
-    </div>
-    <script type="text/javascript" src="handler.js"></script>
-    <script src="render.js"></script>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
   </body>
 </html>
