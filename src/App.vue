@@ -15,17 +15,14 @@
         <h3>Html</h3>
         <editor type="html"></editor>
       </div>
-
       <div class="css">
         <h3>Css</h3>
         <editor type="css"></editor>
       </div>
-
       <div class="javascript">
         <h3>JavaScript</h3>
         <editor type="javascript"></editor>
       </div>
-
       <div class="output" id="output">
         <h3>Output</h3>
         <iframe></iframe>
@@ -49,16 +46,10 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
 .html, .css, .javascript, .output {
   display: inline-block;
   width: 50%;
+  margin: -2px;
 }
 
 .output iframe {

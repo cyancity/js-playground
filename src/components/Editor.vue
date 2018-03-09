@@ -1,6 +1,5 @@
 <template>
-  <div :id="type" ref="editor">
-  </div>
+  <div :id="type" ref="editor"></div>
 </template>
 
 <script>
@@ -60,7 +59,7 @@ export default {
     window['editor_' + this.type].setOption('theme', 'dracula')
 
     window['editor_' + this.type].on('change', () => {
-      that.render()
+      this.render()
     })
   },
   methods: {
