@@ -46,10 +46,13 @@ export default {
 </script>
 
 <style>
+section {
+  font-size: 0;
+}
 .html, .css, .javascript, .output {
   display: inline-block;
   width: 50%;
-  margin: -2px;
+  font-size: 16px;
 }
 
 .output iframe {

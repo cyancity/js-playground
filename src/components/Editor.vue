@@ -1,5 +1,5 @@
 <template>
-  <div :id="type" ref="editor"></div>
+  <div :id="type" ref="editor" class="editor"></div>
 </template>
 
 <script>
@@ -127,4 +127,6 @@ export default {
 </script>
 
 <style>
+  .editor{
+  }
 </style>
